@@ -17,6 +17,9 @@ app.use(express.json());
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+const jobRoutes = require("./routes/job.routes");
+app.use("/jobs", jobRoutes);
+
 app.get('/', (req, res) => {
   res.send('hello world!')
 })

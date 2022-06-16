@@ -9,7 +9,7 @@ const { authenticate } = require("../middlewares/jwt.middleware");
 const router = express.Router();
 
 router.post(
-  "/signup",
+  "/create-user",
   validate([
     body("firstName").isLength({ min: 2 }),
     body("lastName").isLength({ min: 2 }),
